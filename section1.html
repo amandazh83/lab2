@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 10px;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            height: 100%;
+        }
+
+        .text {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .character-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px; /* Adjust the gap as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Links to different sections -->
+        <a href="index.html">Home</a>
+
+        <!-- Active link pointing to the section1.html page -->
+        <a class="active" href="section1.html">Characters</a>
+
+        <a href="section2.html">Houses</a>
+        <a href="section3.html">Films</a>
+        <a href="references.html">References</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Section 1 content -->
+        <p style="text-align: center; font-size: 2em;"><strong><em>Main Characters</em></strong></p>
+        
+        <div class="character-row">
+            <div class="container">
+                <img src="img/Harry.jpg" alt="Harry" class="image">
+                <div class="overlay">
+                    <div class="text">Harry James Potter, the protagonist of the series, was born on July 31, 1980.
+                        He is the only child of wizarding couple James Potter and Lily Potter. Harry has black hair and
+                        green eyes, resembling his father, and his perpetually messy hair is a trademark of the Potter
+                        family. He possesses a natural talent for flying. His pet, a snowy owl named Hedwig, was a gift
+                        from Hogwarts' Keeper of Keys and Grounds, Rubeus Hagrid, on his eleventh birthday.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="img/Hermione.jpg" alt="Hermione" class="image">
+                <div class="overlay">
+                    <div class="text"> Hermione Jean Granger, born on September 19, 1979, comes from a Muggle family. In the books, she
+                        is portrayed as a highly intelligent girl with a passion for academics and a know-it-all demeanor,
+                        occasionally coming across as bossy. Her extensive knowledge proves invaluable in many of their
+                        adventures. The only subject she dislikes is Divination, which she considers an "imprecise" field
+                        of study. Shortly after arriving at Hogwarts, Hermione quickly establishes herself as the brightest
+                        student in her year.
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="img/Ron.jpg" alt="Ron" class="image">
+                <div class="overlay">
+                    <div class="text"> Ronald Bilius Weasley, born on March 1, 1980, is a pure-blood wizard and the sixth son of Arthur and
+                        Molly Weasley. He is also the younger brother of Bill, Charlie, Percy, Fred, George, and the elder
+                        brother of Ginny. Ron and his brothers and sister lived in The Burrow. Ron began attending Hogwarts
+                        School of Witchcraft and Wizardry in 1991 and was sorted into Gryffindor House. He soon became best
+                        friends with fellow student Harry Potter and later Hermione Granger. Together, they faced many challenges
+                        during their adolescence.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
