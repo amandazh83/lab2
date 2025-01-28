@@ -3,9 +3,6 @@
 .topnav {
   background-color: gainsboro;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 10px;
 }
 
 /* Style the links inside the navigation bar */
