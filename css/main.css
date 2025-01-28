@@ -1,6 +1,7 @@
 * {box-sizing: border-box;}
 
 .topnav {
+  width: 100%;
   background-color: gainsboro;
   overflow: hidden;
 }
