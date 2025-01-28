@@ -32,10 +32,9 @@
 }
 
 .topnav .search-container {
+  margin-left: auto;
   display: flex;
   align-items: center;
-  position: absolute;
-  right: 10px;
 }
 
 .topnav input[type=text] {
