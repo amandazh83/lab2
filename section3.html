@@ -29,6 +29,27 @@
         <a href="javascript:void(0);" class="icon">
             <i class="fa fa-bars"></i>
         </a>
+
+        <!-- Search bar -->
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="rain.mp4" type="video/mp4">
+    </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum...</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
     </div>
 
     <!-- Page content -->
@@ -39,6 +60,32 @@
 
     <!-- Including the main.js file for JavaScript functionality -->
     <script src="js/main.js"></script>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 
