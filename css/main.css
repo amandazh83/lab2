@@ -25,11 +25,6 @@
   color: white;
 }
 
-/* Hide the icon that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
 /* Style for page content */
 .content {
   padding: 14px;
@@ -61,16 +56,6 @@
     right: 0;
     top: 0;
   }
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
 }
 
 /* Style the search box inside the navigation bar */
