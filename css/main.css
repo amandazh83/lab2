@@ -1,6 +1,4 @@
-/* Add a black background color to the top navigation */
 .topnav {
-  background-color: rgb(0, 0, 0);
   overflow: hidden;
 }
 
@@ -36,20 +34,6 @@
 .content {
   padding: 14px;
   font-size: 22px;
-}
-
-/* When the screen is less than 800 pixels wide */
-@media screen and (max-width: 800px) {
-  /* Hide all links, except for the selected tab */
-  .topnav a:not(.active) {
-    display: none;
-  }
-
-  /* Show the icon that should open and close the topnav */
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
 }
 
 /* When the screen is less than 800 pixels wide, if the user clicks on the icon */
