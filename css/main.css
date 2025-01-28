@@ -29,10 +29,7 @@
 }
 
 .topnav .search-container {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  right: 10px;
+  float: right;
 }
 
 .topnav input[type=text] {
@@ -60,15 +57,7 @@
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
-    width: 100%;
   }
-
-  .topnav a {
-    display: inline-block;
-    text-align: left;
-    padding: 14px;
-  }
-
   .topnav a, .topnav input[type=text], .topnav .search-container button {
     float: none;
     display: block;
@@ -252,4 +241,4 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
+} 
